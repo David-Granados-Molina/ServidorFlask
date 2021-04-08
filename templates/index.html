@@ -22,7 +22,7 @@
 
                 <img src="../static/img/logo.svg">
 
-                <div>Descubre las magníficas posibilidades de nuestro {{datos[0]}}</div>
+                <div>Descubre las magníficas posibilidades de nuestro {{datos[2]}}</div>
 
                 <button>¡Descubre ya!</button>
 
@@ -32,9 +32,9 @@
 
         <div class="box2">
 
-            <h2 class="title">{{title}}</h2>
+            <h2 class="title">{{datos[3]}}</h2>
 
-            <h2 class="subtitle">{{subtitle}}</h2>
+            <h2 class="subtitle">{{datos[1]}}</h2>
 
             <div>
                 Unete a nuestro {{title}} {{subtitle}} y comienza
@@ -46,7 +46,7 @@
             <a href="">¡RESERVA YA!<img class="arrow" src="../static/img/flecha.svg"></a>
 
 
-            {% if icons %}
+            {% if datos[0] %}
 
                 <div class="icons">
 
