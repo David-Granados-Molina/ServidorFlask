@@ -1,0 +1,94 @@
+<html>
+<head>
+    <title>Puente Real</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='stylesheets/style.css')}}"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+<body>
+    <div class="totalCont">
+
+        <div class="box1">
+
+            <div class="video">
+
+                <iframe src="https://www.youtube.com/embed/M2ILKmWgW8I" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <img src="../static/img/play.png" class="play">
+
+            </div>
+
+            <div class="logoBox">
+
+                <img src="../static/img/logo.svg">
+
+                <div>Descubre las magníficas posibilidades de nuestro {{datos[0]}}</div>
+
+                <button>¡Descubre ya!</button>
+
+            </div>
+
+        </div>
+
+        <div class="box2">
+
+            <h2 class="title">{{title}}</h2>
+
+            <h2 class="subtitle">{{subtitle}}</h2>
+
+            <div>
+                Unete a nuestro {{title}} {{subtitle}} y comienza
+                a disfrutar<br>de tus vacaciones a otro nivel. Convertimos
+                el 5% del valor de tus<br>reservas en puntos que podrás
+                canjear en servicios del hotel.
+            </div>
+
+            <a href="">¡RESERVA YA!<img class="arrow" src="../static/img/flecha.svg"></a>
+
+
+            {% if icons %}
+
+                <div class="icons">
+
+                    <div class="block1">
+
+                        <img class="image" src="../static/img/img1.svg">
+
+                        <div>5% de descuento<br>exclusivo</div>
+
+                    </div>
+
+                    <div class="block1">
+
+                        <img class="image" src="../static/img/img3.svg">
+
+                        <div>Detalle<br>de Bienvenida</div>
+
+                    </div>
+
+                    <div class="block2">
+
+                        <img class="image" src="../static/img/img2.svg">
+
+                        <div>Late Checkout<br>(Sujeto a disponibilidad)</div>
+
+                    </div>
+
+                    <div class="block2">
+
+                        <img class="image" src="../static/img/img4.svg">
+
+                        <div>Upgrade en<br>tu habitación</div>
+
+                    </div>
+
+                </div>
+
+            {% endif %}
+
+        </div>
+
+    </div>
+<script src="../jquery/jquery.js"></script>
+</body>
+</html>
