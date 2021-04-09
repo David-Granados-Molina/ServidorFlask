@@ -9,18 +9,28 @@ def data():
         'gold': 'Todo Incluido Be Gold',
         'title': 'Puente Real',
         'subtitle': 'Lovers Club',
-        'icons': 'class:"icons"'
+        'icons': 'class:"icons"',
+        'pictures': [
+            {
+                'image': '../static/img/img1.svg',
+                'name': 'img1'
+            },
+            {
+                'image': '../static/img/img2.svg',
+                'name': 'img2'
+            },
+            {
+                'image': '../static/img/img3.svg',
+                'name': 'img3'
+            },
+            {
+                'image': '../static/img/img4.svg',
+                'name': 'img4'
+            }
+        ]
     }
 
-    datos = []
-
-    for valor in dictionary.values():
-
-        datos.append(valor)
-
-
-    return render_template(
-        'index.html', datos=datos)
+    return render_template('index.html', **dictionary)
 
 
 if __name__ == '__main__':
